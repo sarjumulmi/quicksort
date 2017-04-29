@@ -1,0 +1,9 @@
+require_relative './config/environment'
+puts "Welcome to Console"
+desc "A Console"
+def reload!
+  load './lib/quicksort'
+end
+task :console do
+  pry.start
+end
